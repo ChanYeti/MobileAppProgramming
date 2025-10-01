@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="선택을 시작하겠습니까?"
+        android:textColor="#878282"
+        android:textSize="20sp" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="95dp"
+        android:layout_height="27dp"
+        android:text="시작함" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="좋아하는 안드로이드 버전은?"
+        android:textColor="#878282"
+        android:textSize="20sp"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible">
+
+        <RadioButton
+            android:id="@+id/radioButtonOreo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="오레오(8.0)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonPie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="파이(9.0)" />
+
+        <RadioButton
+            android:id="@+id/radioButtonQ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q(10.0)" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imgOreo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Oreo Image"
+        android:src="@drawable/oreo"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imgPie"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Pie Image"
+        android:src="@drawable/pie"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imgQ"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:contentDescription="Q Image"
+        android:src="@drawable/q10"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="종료"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:text="처음으로"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+</LinearLayout>
